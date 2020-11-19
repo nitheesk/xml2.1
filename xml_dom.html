@@ -28,7 +28,7 @@ h3{
 </style>
 <body>
 <center><h2>Product XML and DOM</h2></center>
-<h3>Click here to display the details!!!</h3>
+<h3>Click here to display the products in the NMP Store!!!</h3>
 
 <button type="button" onclick="loadXMLDoc()">Products in my Store</button>
 <br><br>
@@ -50,11 +50,18 @@ function loadXMLDoc() {
 function myFunction(xml) {
   var i;
   var xmlDoc = xml.responseXML;
-  
+  var table="<tr><th>CATEGORY</th><th>PRODUCT</th><th>VITAMIN</th><th>CURRENCY</th><th>PRICE</th><th>REVIEW</th><th>PAYMENT</th></tr>";
   var x = xmlDoc.getElementsByTagName("CD");
   for (i = 0; i <x.length; i++) { 
     table += "<tr><td>" +
-    
+    x[i].getElementsByTagName("CATEGORY")[0].childNodes[0].nodeValue +
+    "</td><td>" +
+    x[i].getElementsByTagName("PRODUCT")[0].childNodes[0].nodeValue +
+    "</td><td>" +
+    x[i].getElementsByTagName("PRICE")[0].childNodes[0].nodeValue +
+    "</td><td>" +
+    x[i].getElementsByTagName("PAYMENT")[0].childNodes[0].nodeValue +
+    "</td></tr>";
   }
   document.getElementById("demo").innerHTML = table;
 }
