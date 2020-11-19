@@ -1,0 +1,33 @@
+[
+   {
+      "CATEGORY": "Breakfast",
+      "PRODUCT": "Bread",
+      "PRICE": "30",
+      "PAYMENT": "COD / ONLINE PAYMENT"
+   },
+   {
+      "CATEGORY": "Breakfast",
+      "PRODUCT": "DOSA",
+      "PRICE": "25",
+      "PAYMENT": "COD / ONLINE PAYMENT"
+   },
+   {
+      "CATEGORY": "LUNCH",
+      "PRODUCT": "MEALS",
+      "PRICE": "40",
+      "PAYMENT": "COD / ONLINE PAYMENT"
+   },
+   {
+      "CATEGORY": "DINNER",
+      "PRODUCT": "IDLI",
+      "PRICE": "30",
+      "PAYMENT": "COD"
+   },
+   {
+      "CATEGORY": "DINNER",
+      "PRODUCT": "PAROTTA",
+      "PRICE": "50",
+      "PAYMENT": "COD / ONLINE PAYMENT"
+   },
+  
+]
